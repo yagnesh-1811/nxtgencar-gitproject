@@ -1,0 +1,3 @@
+'1';'Keyo';'Buluk';'SM';'Pampanga';'Dito Lang';'Dyan Lang';'5623523';'346232';'hahah@yahoo.com';'34646';'44664';'May  14  1996';'user';'user';'user'
+'2';'vfhfgh';'sdfhfg';'dhhfgf';'dghhu';'dgh';'rhrtutg';'24235';'243521';'sdfgddas';'1243';'25345';'March  6  1992';'';'';''
+'225';'Guevarra';'Juliu';'SMB';'Pampanga';'Dito';'Dito';'932523';'38843';'hahaha@yahoo.com';'23445';'245236';'April  13  1992';'gudo';'pass123';'user'

@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72D0AB30-BA78-46D2-A48E-EBC8D5D074B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CarRental.My.MyApplication</StartupObject>
+    <RootNamespace>CarRental</RootNamespace>
+    <AssemblyName>CarRental</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CarRental.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CarRental.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.2.5\Assemblies\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewclient.Designer.vb">
+      <DependentUpon>addnewclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addnewclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewreservation.Designer.vb">
+      <DependentUpon>addnewreservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addnewreservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewvehicle.Designer.vb">
+      <DependentUpon>addnewvehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addnewvehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addvehiclecreditcard.Designer.vb">
+      <DependentUpon>addvehiclecreditcard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addvehiclecreditcard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backupform.Designer.vb">
+      <DependentUpon>backupform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="backupform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientreservation.Designer.vb">
+      <DependentUpon>clientreservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientreservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientslist.Designer.vb">
+      <DependentUpon>clientslist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientslist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientsmain.Designer.vb">
+      <DependentUpon>clientsmain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clientsmain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteclient.Designer.vb">
+      <DependentUpon>deleteclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteform.Designer.vb">
+      <DependentUpon>deleteform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="deleteform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editclient.Designer.vb">
+      <DependentUpon>editclient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editclient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editform.Designer.vb">
+      <DependentUpon>editform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="editform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endreservation.Designer.vb">
+      <DependentUpon>endreservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="endreservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoiceform.Designer.vb">
+      <DependentUpon>invoiceform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="invoiceform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="myaccount.Designer.vb">
+      <DependentUpon>myaccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="myaccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.vb">
+      <DependentUpon>register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registernew.Designer.vb">
+      <DependentUpon>registernew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registernew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentlist.Designer.vb">
+      <DependentUpon>rentlist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rentlist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservation.Designer.vb">
+      <DependentUpon>reservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchclientform.Designer.vb">
+      <DependentUpon>searchclientform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchclientform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchform.Designer.vb">
+      <DependentUpon>searchform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchreservation.Designer.vb">
+      <DependentUpon>searchreservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="searchreservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicle.Designer.vb">
+      <DependentUpon>vehicle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vehicle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vehicleslist.Designer.vb">
+      <DependentUpon>vehicleslist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="vehicleslist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnewclient.resx">
+      <DependentUpon>addnewclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnewreservation.resx">
+      <DependentUpon>addnewreservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnewvehicle.resx">
+      <DependentUpon>addnewvehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addvehiclecreditcard.resx">
+      <DependentUpon>addvehiclecreditcard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backupform.resx">
+      <DependentUpon>backupform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientreservation.resx">
+      <DependentUpon>clientreservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientslist.resx">
+      <DependentUpon>clientslist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientsmain.resx">
+      <DependentUpon>clientsmain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteclient.resx">
+      <DependentUpon>deleteclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteform.resx">
+      <DependentUpon>deleteform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editclient.resx">
+      <DependentUpon>editclient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editform.resx">
+      <DependentUpon>editform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endreservation.resx">
+      <DependentUpon>endreservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoiceform.resx">
+      <DependentUpon>invoiceform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myaccount.resx">
+      <DependentUpon>myaccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registernew.resx">
+      <DependentUpon>registernew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rentlist.resx">
+      <DependentUpon>rentlist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservation.resx">
+      <DependentUpon>reservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchclientform.resx">
+      <DependentUpon>searchclientform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchform.resx">
+      <DependentUpon>searchform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchreservation.resx">
+      <DependentUpon>searchreservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicle.resx">
+      <DependentUpon>vehicle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vehicleslist.resx">
+      <DependentUpon>vehicleslist.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bertone-Dream-Car-Wallpaper-HDTV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audi-Rs5-Stunning-HD-Wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1475387935_malecostume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_close_48_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1475387900_male3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_ok_48_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista_icons_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vista_icons_09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rent-a-car2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\config_48_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PPT_filetype %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\credit_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit_Card1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar_currency_sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_48_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB-drive---dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB-drive1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add_48_hot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peugeot_206_orange1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peugeot_206_grey1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
